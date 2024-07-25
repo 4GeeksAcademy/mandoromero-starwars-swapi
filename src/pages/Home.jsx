@@ -4,6 +4,7 @@ import EntityList from "../components/EntityList.jsx";
 import { useGlobalReducer } from "../hooks/useGlobalReducer";
 import { fetchPeople, fetchVehicles, fetchPlanets } from '../components/Actions.jsx';
 
+
 const Home = () => {
   const { state, dispatch } = useGlobalReducer();
   

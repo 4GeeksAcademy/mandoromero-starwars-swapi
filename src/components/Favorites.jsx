@@ -1,3 +1,4 @@
+// Favorites.jsx
 import React from 'react';
 import EntityList from './EntityList';
 import { useGlobalReducer } from '../hooks/useGlobalReducer';
@@ -16,4 +17,5 @@ const Favorites = () => {
 };
 
 export default Favorites;
+
 

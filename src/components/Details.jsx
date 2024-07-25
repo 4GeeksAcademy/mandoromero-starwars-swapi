@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
+
 const Details = () => {
 let { id, type } = useParams();
   const [entity, setEntity] = useState({});
 
   // here is an if statement to catch "chatacters" and make people instead
-  if (type == "characters") type = "people";
+  if (type === "characters") type = "people";
   useEffect(() => {
     const fetchEntity = async () => {
       try {
