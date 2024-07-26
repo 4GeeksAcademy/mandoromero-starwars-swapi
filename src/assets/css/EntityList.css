@@ -1,0 +1,9 @@
+.card {
+    cursor: grab;
+    width: 210px;
+    height: 280px;
+    marginBottom: 10px;
+    border: 3px #FFE81F solid;
+    color: #FFE81F;
+    backgroundColor: #000000
+}

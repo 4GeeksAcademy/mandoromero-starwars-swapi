@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import { useGlobalReducer } from '../hooks/useGlobalReducer';
 import { addToFavorites, removeFromFavorites } from './Actions';
+import '../assets/css/EntityList.css';
 
 const EntityCarousel = ({ entities, entityType, onFavorite }) => {
   const { dispatch } = useGlobalReducer();
@@ -58,18 +59,7 @@ const EntityCarousel = ({ entities, entityType, onFavorite }) => {
 
           return (
             <div key={entity.uid} style={{ padding: '10px' }}>
-              <div
-                className="card"
-                style={{
-                  cursor: "grab",
-                  width: "225px",
-                  height: "303px",
-                  marginBottom: "10px",
-                  border: "3px #FFE81F solid",
-                  color: "#FFE81F",
-                  backgroundColor: "#000000"
-                }}
-              >
+              <div className="card">
                 <img
                   className="card-img-top"
                   src={`https://starwars-visualguide.com/assets/img/${imageEntityType}/${entity.uid}.jpg`}
@@ -94,15 +84,16 @@ const EntityCarousel = ({ entities, entityType, onFavorite }) => {
                   </div>
                 </div>
                 <Link
-                  to={`/details/${derivedEntityType}/${entity.uid}`}
+                  to={`./details/${derivedEntityType}/${entity.uid}`}
                   className="btn"
                   style={{
-                    width: "100%",
+                    width: "50%",
                     height: "30px",
                     fontSize: "12px",
-                    marginTop: "10px",
                     backgroundColor: "#FFE81F",
-                    textAlign: "center"
+                    marginRight: "auto",
+                    marginLeft: "auto",
+                    marginBottom: "10px"
                   }}
                 >
                   Learn more!

@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 
-
-const Details = () => {
-let { id, type } = useParams();
+function Details() {
+  const { type, id } = useParams();
   const [entity, setEntity] = useState({});
 
   // here is an if statement to catch "chatacters" and make people instead
