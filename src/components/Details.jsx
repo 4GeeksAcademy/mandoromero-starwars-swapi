@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-
+import '../assets/css/Details.css';
 function Details() {
   const { type, id } = useParams();
   const [entity, setEntity] = useState({});
@@ -21,7 +21,7 @@ function Details() {
   }, [id, type]);
 
   return (
-    <div className="container" style={{ fontFamily: 'SF Distant Galaxy, sans-serif', color: "#ffe81f" }}>
+    <div className="container">
       {entity ? (
         <>
           <h1 style={{ fontFamily: 'SF Distant Galaxy, sans-serif', color: "#ffe81f", marginLeft: "50px" }}>{entity.name}</h1>

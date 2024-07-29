@@ -3,6 +3,7 @@ import React, { useEffect } from 'react';
 import EntityList from "../components/EntityList.jsx";
 import { useGlobalReducer } from "../hooks/useGlobalReducer";
 import { fetchPeople, fetchVehicles, fetchPlanets } from '../components/Actions.jsx';
+import '../assets/css/Home.css';
 
 
 const Home = () => {

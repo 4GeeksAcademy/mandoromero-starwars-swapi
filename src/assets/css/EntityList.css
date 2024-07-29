@@ -1,9 +1,41 @@
 .card {
+    display: flex;
     cursor: grab;
-    width: 210px;
-    height: 280px;
-    marginBottom: 10px;
+    width: 180px;
+    height: 270px;
+    margin-bottom: 10px;
     border: 3px #FFE81F solid;
     color: #FFE81F;
-    backgroundColor: #000000
+    background-color: #000000;
 }
+
+.card-header {
+    display: flex;
+    height: 20px;
+    padding-top: 5px;
+    margin: 0;
+}
+
+.card-body {
+    padding: 0;
+}
+
+.title {
+    width: 75%;
+}
+
+.card-title {
+    font-size: 16px;
+}
+
+.card-body {
+    padding-bottom: 0;
+}
+
+#favorite {
+    border: none;
+    background-color: #000000;
+    color: #FFE81F;
+    cursor: pointer;
+}
+

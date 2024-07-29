@@ -4,8 +4,7 @@ import ReactDOM from 'react-dom/client';
 import { RouterProvider } from "react-router-dom";  // Import RouterProvider to use the router
 import { router } from "./routes";  // Import the router configuration
 import { StoreProvider } from './hooks/useGlobalReducer';  // Import the StoreProvider for global state management
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css'
+
 
 
 
