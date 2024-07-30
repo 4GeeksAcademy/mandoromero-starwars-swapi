@@ -67,20 +67,10 @@ const EntityCarousel = ({ entities, entityType, onFavorite }) => {
                           </div>
                         </div>  
                       </div>
-                      <Link
-                        to={`./details/${derivedEntityType}/${entity.uid}`}
-                        className="btn"
-                        style={{
-                          width: '100%',
-                          height: '30px',
-                          fontSize: '12px',
-                          backgroundColor: '#FFE81F',
-                          marginBottom: '10px',
-                        }}
-                      >
-                        Learn more!
-                      </Link>
-                    </div>
+                       <div className="Details">
+                        <Link to={`./details/${derivedEntityType}/${entity.uid}`}>Learn more!</Link>
+                      </div> 
+                    </div>  
                   </div>
                 );
               })}
