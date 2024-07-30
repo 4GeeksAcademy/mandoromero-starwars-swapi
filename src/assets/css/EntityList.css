@@ -3,10 +3,6 @@ h1 {
     font-weight: 700;
 }
 
-h2 {
-
-    font-weight: 700;
-}
 .card {
     display: flex;
     cursor: grab;
@@ -56,12 +52,15 @@ h2 {
 }
 
 .Details {
-    width: 60px;
+    width: 80px;
     height: 30px;
     font-size: 10px;
     border: 1px #ffe81f solid;
     border-radius: 10%;
-    background-color: #FFE81;
-    margin-bottom: 10px;
+    background-color: #FFE81f;
+    margin: auto;
+    padding-top: 5px;
 }
-
+link {
+    margin top: 5px;
+}
