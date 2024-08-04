@@ -16,7 +16,7 @@ const Home = () => {
   }, [dispatch]);
 
   return (
-    <div className="container" style={{ fontFamily: 'SF Distant Galaxy, sans-serif', textAlign: "center", backgroundColor: "black", width: "100%", height: "auto" }}>
+    <div className="container">
       <h1 style={{ color: "#ffe81f" }}>Star Wars Entities</h1>
       <h2 style={{ color: "#ffe81f" }}>Characters</h2>
       <EntityList entities={state.characters} entityType="characters" />

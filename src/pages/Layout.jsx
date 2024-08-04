@@ -10,7 +10,7 @@ const Layout = () => {
   return (
     <ScrollToTop>
       <Navbar />
-      <div className="content bg-black">
+      <div className="content bg-black" style={{ margin: "0" }}>
         <Outlet />  {/* This is where nested routes will be rendered */}
       </div>
       <Footer />

@@ -24,11 +24,11 @@ function Details() {
     <div className="container">
       {entity ? (
         <>
-          <h1 style={{ fontFamily: 'SF Distant Galaxy, sans-serif', color: "#ffe81f", marginLeft: "50px" }}>{entity.name}</h1>
+          <h1 style={{ color: "#ffe81f", marginLeft: "50px" }}>{entity.name}</h1>
           {type === 'people' && (
             <>
               <div style={{ display: "flex" }}>
-                <div style={{ marginLeft: "100px"}}>
+                <div>
                   <p>Height:</p> 
                   <p>Weight:</p>
                   <p>Hair-Color:</p>
